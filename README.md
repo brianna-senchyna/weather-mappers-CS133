@@ -4,7 +4,7 @@ Authors:
 Brianna Senchyna, Jennie Le
 
 ### Description:
-Weather conditions such as temperature, precipitation, and snowfall vary across location and time. In this project, we will perform exploratory data analysis (EDA) on data collected from the NCEI NOAA, a federal agency that manages environmental data. We will compare data across 3 stations (Dublin, Toronto, and San Jose) and track the conditions from 2013 to 2025. Graphs, tables, and other statistical analysis will be used to explore the relationships between weather variables in relation to season, location, and year. This will provide key information about changes in weather trends and potential insight on future patterns.
+Weather conditions such as temperature, precipitation, and snowfall vary across location and time. In this project, we will perform exploratory data analysis (EDA) on data collected from the NCEI NOAA, a federal agency that manages environmental data. We will compare data across 3 stations (Dublin, Toronto, and San Jose) and track the conditions from 2014 to 2025. Graphs, tables, and other statistical analysis will be used to explore the relationships between weather variables in relation to season, location, and year. This will provide key information about changes in weather trends and potential insight on future patterns.
 
 ### Interface Plan:
 - We will create a Jupyter notebook and a dashboard.
@@ -12,7 +12,7 @@ Weather conditions such as temperature, precipitation, and snowfall vary across 
 - The dashboard will let viewers explore our findings.
 
 ### Data Collection and Storage Plan:
-Our weather data comes from NOAA's GHCN-Daily dataset. We read the yearly files directly from the NOAA website into pandas and keep only the measurements we need such as temperature and precipitation. We also keep the station metadata (which includes name, location and elevation) for our 3 stations in a separate small file. Each yearly file is loaded straight into memory, so no raw data is stored. We plan to clean and reshape the data and store it as a CSV file in the Github repo under data/.
+Our weather data comes from NOAA's GHCN-Daily dataset. We read the yearly files directly from the NOAA website into pandas and keep only the measurements we need such as temperature and precipitation. We also keep the station metadata (which includes name, location and elevation) for our 3 stations in a separate small file. Each yearly file is loaded straight into memory, so no raw data is stored. We clean and reshape the data and store it as a CSV file in the Github repo under data/.
 
 ### Data Analysis and Visualization Plan:
 - Identify weather condition features (ex: max temperature, precipitation) that are most relevant across the stations and years and minimize missing data
